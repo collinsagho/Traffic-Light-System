@@ -1,0 +1,46 @@
+/* styles.css */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+  }
+  
+  .traffic-light {
+    background-color: #333;
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  }
+  
+  .light {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #555;
+    opacity: 0.3; /* Lights are off by default */
+    /* transition: opacity 0.3s ease-in-out; */
+  }
+  
+  .red {
+    background-color: #ff0000;
+  }
+  
+  .yellow {
+    background-color: #ffff00;
+  }
+  
+  .green {
+    background-color: #00ff00;
+  }
+  
+  /* Active light */
+  .light.active {
+    opacity: 1;
+  }
